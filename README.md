@@ -1,5 +1,7 @@
-# Login-NodeJs-MySQL-PassportJs
+# NodeJs-News-login-MySQL-Materialize
 This is a Login with Forms to Sign In and Sign Up
+
+![Alt text](news-login.png)
 
 ![Alt text](login-node-mysql.png)
 
@@ -21,6 +23,7 @@ Este login tiene los features de Crear usuarios, Encriptar sus contraseñas con 
 * BcryptJs
 * Passport
 * Flash
+* newsapi
 # Managing Environment Variables
 
 With dotenv, you can define all of your variables in a .env file.

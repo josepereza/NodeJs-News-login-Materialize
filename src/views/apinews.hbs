@@ -1,0 +1,51 @@
+<h2 class="center-align" style="color: antiquewhite">NEWS</h2>
+<div class="row z-depth-3" style="background:rgba(255, 255, 219, 0.5); width:50%; border-radius:8px" >
+    <form action="/buscar" method="post">
+        <div class="input-field col s12 m8 offset-m2 l8 offset-l2">
+
+            <select  name="busqueda">
+                <option id="thema" value="general">Thema wählen</option>
+                <option value="general">General</option>
+                <option value="politics">Politk</option>
+                <option value="technologie">Technologie</option>
+                <option value="sport">Sports</option>
+                <option value="economy">Economy,Wirtschaft</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="health">Health,Gesundheit</option>
+                <option value="science">Science</option>
+                 <option value="music">Music</option>
+
+            </select>
+            <select  name="pais">
+                <option value="de">Sprache</option>
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+                <option value="es">Spanisch</option>
+                <option value="fr">Französisch</option>
+                <option value="it">italienisch</option>
+                <option value="pt">portugiesisch</option>
+            </select>
+            <input class="btn" type="submit" value="senden">
+        </div>
+      
+    </form>
+</div>
+
+<div class="card-container ">
+
+    {{#each news2}}
+    <div class="card">
+        <div class="card-image center-align">
+            <img src="{{urlToImage}}" alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <p class="card-content">{{title}}</p>
+            <p class="card-text">{{overview}}</p>
+            <a href="{{url}}">SOURCE</a>
+
+        </div>
+    </div>
+    {{else}}
+    <p>Empty news!!</p>
+    {{/each}}
+</div>

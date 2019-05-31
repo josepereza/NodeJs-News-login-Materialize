@@ -2,7 +2,7 @@ const express = require('express');
 const expressRouter = express.Router();
 const { isLoggedIn } = require('../lib/helper_auth');
 const NewsAPI = require('newsapi');
-const newsapi = new NewsAPI('you_api');
+const newsapi = new NewsAPI('you_apikey');
 
 expressRouter.get('/', isLoggedIn, (req, res) => {
     res.render('index');

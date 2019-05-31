@@ -6,7 +6,7 @@ This is a Login with Forms to Sign In and Sign Up
 ![Alt text](login-node-mysql.png)
 
 ## Description
-Este login tiene los features de Crear usuarios, Encriptar sus contraseñas con EncryptJs y guardarlos en una base de datos con MySQL, Se podra loguear buscando el Username ingresado y despues comparando la contraseña encriptada que esta en la base de datos con la insertada recientemente, Se recibira mensajes Flash para asi mostrar al usuario su Login Success o su Login Error
+Este login tiene los features de Crear usuarios, Encriptar sus contraseñas con EncryptJs y guardarlos en una base de datos con MySQL, Se podra loguear buscando el Username ingresado y despues comparando la contraseña encriptada que esta en la base de datos con la insertada recientemente. Nesitas conseguir una apikey  de la pagina https://newsapi.org/ y sustituir 'you_apikey' en el archivo: /src/routes/index.js   en la linea: "const newsapi = new NewsAPI('you_apikey');"  con la nueva apikey
 
 ### Languages, Technologies & Libraries Used
 * HTML5
